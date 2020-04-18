@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomCheckbox">
+        <attr name="enableSwitch" format="boolean"/>
+        <attr name="setText1" format="string"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+      <com.example.nishant225.views.CustomView
+        android:id="@+id/customview"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+
+
+
+
+          app:square_color="@color/squareColor"
+
+        app:square_size="100dp"
+
+        ></com.example.nishant225.views.CustomView>
+
+    <com.example.nishant225.views.CustomButton
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:layout_below="@+id/customview"
+        android:background="@drawable/custom_button"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+
+        app:setButtonColor="true"
+        app:setText="SWAP COLOR"
+        ></com.example.nishant225.views.CustomButton>
+
+
+    <com.example.nishant225.views.CustomCheckBox
+        android:id="@+id/cb"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAlignment="inherit"
+
+
+        app:enableSwitch="true"
+        app:setText1="CheckBox Switch Enabled"
+
+        />
+
+    <com.example.nishant225.views.CustomRadioButton
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/rb"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cb"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+
+        app:enableColor="true"
+        app:settext="radio button"
+
+
+        />
+
+
+
+
+</RelativeLayout>
